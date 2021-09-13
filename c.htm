@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.55, maximum-scale=2.0, user-scalable=yes" />
+        <title>备案详情</title>
+</head>
+      <body>
+        <b><p style="font-family:Microsoft JhengHei;font-size:14px;"> 当前备案编号 : 0012578543</p></b>
+
+<HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)"  color=#f1f1f1 SIZE=1>
+       <span style="font-family:arial;font-size:38px;"> 状态 : </span>
+        <span  style="font-family:arial;color:green;font-size:36px;"> 已出校</span>
+
+<HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)"  color=#f1f1f1 SIZE=1>
+       <span style="font-family:arial;font-size:26px;"> 出校日期 : 2021-09-18</span>
+
+<HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)"  color=#f1f1f1 SIZE=1>
+
+        <span style="font-family:arial;font-size:26px;"> 当前时间 : </span>
+        <b><span class="showTime" style="font-family:arial;color:#ec0a0e;font-size:36px;"> 00:00:00</span></b>
+
+<script>
+  var t = null;
+  t = setTimeout(time, 1000); 
+  function time() {
+    clearTimeout(t); 
+    dt = new Date();
+    var h = dt.getHours(); 
+    //if(len(h)==1){h="0"+h};
+    h=h>9?h:"0"+h;
+    var m = dt.getMinutes(); 
+    m=m>9?m:"0"+m;
+    var s = dt.getSeconds(); 
+    s=s>9?s:"0"+s;
+    document.querySelector(".showTime").innerHTML =
+      h +
+      ":" +
+      m +
+      ":" +
+      s ;
+    t = setTimeout(time, 1000); 
+  }
+</script>
+
+<HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)"  color=#f1f1f1 SIZE=1>
+        <p style="font-family:arial;font-size:27px;"> 出校起始时间 : 2021-09-18<br>08:00:00
+        </p>
+<HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)"  color=#f1f1f1 SIZE=1>
+        <p style="font-family:arial;font-size:27px;"> 出校结束时间 : 2021-09-21<br>17:00:00
+        </p>
+<HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)"  color=#f1f1f1 SIZE=1>
+        <b><p style="font-family:Microsoft JhengHei;font-size:13px;"> 提交时间 : 2021-09-17 10:21:23</p>
+<HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)"  color=#f1f1f1 SIZE=1>
+      <p style="font-family:Microsoft JhengHei;font-size:13px;">姓名 : 贾敏姿</p>
+<HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)"  color=#f1f1f1 SIZE=1>
+        <p style="font-family:Microsoft JhengHei;font-size:13px;"> 学号 : 1930180091</p></b>
+<HR style="FILTER: alpha(opacity=40,finishopacity=0,style=3)"  color=#f1f1f1 SIZE=1>
+         <b><p style="font-family:Microsoft JhengHei;font-size:13px;"> 性别 : 女</p></b>
+    </body>
+</html>
